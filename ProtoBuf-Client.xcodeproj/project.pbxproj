@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8289D429F8D9920E2EFD5F22 /* Pods_ProtoBuf_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E32A2135A72E7F32779E47 /* Pods_ProtoBuf_Client.framework */; };
 		9297EA8B1FD592730047ECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EA8A1FD592730047ECA7 /* AppDelegate.swift */; };
 		9297EA8D1FD592730047ECA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EA8C1FD592730047ECA7 /* ViewController.swift */; };
 		9297EA901FD592730047ECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297EA8E1FD592730047ECA7 /* Main.storyboard */; };
 		9297EA921FD592730047ECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9297EA911FD592730047ECA7 /* Assets.xcassets */; };
 		9297EA951FD592730047ECA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9297EA931FD592730047ECA7 /* LaunchScreen.storyboard */; };
+		9297EA9E1FD5A10C0047ECA7 /* HistoricalEvent.proto in Resources */ = {isa = PBXBuildFile; fileRef = 9297EA9D1FD5A10C0047ECA7 /* HistoricalEvent.proto */; };
+		9297EAA21FD5A1E80047ECA7 /* HistoricalEvent.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EAA11FD5A1E80047ECA7 /* HistoricalEvent.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B652DD5797D8291DF8821C6 /* Pods-ProtoBuf-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtoBuf-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtoBuf-Client/Pods-ProtoBuf-Client.release.xcconfig"; sourceTree = "<group>"; };
 		9297EA871FD592730047ECA7 /* ProtoBuf-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProtoBuf-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9297EA8A1FD592730047ECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9297EA8C1FD592730047ECA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		9297EA911FD592730047ECA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9297EA941FD592730047ECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9297EA961FD592730047ECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9297EA9D1FD5A10C0047ECA7 /* HistoricalEvent.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HistoricalEvent.proto; sourceTree = "<group>"; };
+		9297EAA11FD5A1E80047ECA7 /* HistoricalEvent.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoricalEvent.pb.swift; path = "ProtoBuf-Client/Resources/HistoricalEvent.pb.swift"; sourceTree = "<group>"; };
+		C6DBF0059C0A92C021F97D4B /* Pods-ProtoBuf-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtoBuf-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtoBuf-Client/Pods-ProtoBuf-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		F5E32A2135A72E7F32779E47 /* Pods_ProtoBuf_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtoBuf_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8289D429F8D9920E2EFD5F22 /* Pods_ProtoBuf_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2DD6F3BBBE385A9A687845 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6DBF0059C0A92C021F97D4B /* Pods-ProtoBuf-Client.debug.xcconfig */,
+				6B652DD5797D8291DF8821C6 /* Pods-ProtoBuf-Client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		753C840D1219167F7B15C0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5E32A2135A72E7F32779E47 /* Pods_ProtoBuf_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9297EA7E1FD592730047ECA7 = {
 			isa = PBXGroup;
 			children = (
 				9297EA891FD592730047ECA7 /* ProtoBuf-Client */,
 				9297EA881FD592730047ECA7 /* Products */,
+				4E2DD6F3BBBE385A9A687845 /* Pods */,
+				753C840D1219167F7B15C0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,8 @@
 		9297EA891FD592730047ECA7 /* ProtoBuf-Client */ = {
 			isa = PBXGroup;
 			children = (
+				9297EAA01FD5A15E0047ECA7 /* Models */,
+				9297EA9C1FD5A10C0047ECA7 /* Resources */,
 				9297EA8A1FD592730047ECA7 /* AppDelegate.swift */,
 				9297EA8C1FD592730047ECA7 /* ViewController.swift */,
 				9297EA8E1FD592730047ECA7 /* Main.storyboard */,
@@ -64,6 +94,22 @@
 			path = "ProtoBuf-Client";
 			sourceTree = "<group>";
 		};
+		9297EA9C1FD5A10C0047ECA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9297EA9D1FD5A10C0047ECA7 /* HistoricalEvent.proto */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9297EAA01FD5A15E0047ECA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9297EAA11FD5A1E80047ECA7 /* HistoricalEvent.pb.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +117,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9297EA991FD592730047ECA7 /* Build configuration list for PBXNativeTarget "ProtoBuf-Client" */;
 			buildPhases = (
+				9297EA9F1FD5A12D0047ECA7 /* ShellScript */,
+				2AFE9C329F9FB4D51F96CB5E /* [CP] Check Pods Manifest.lock */,
 				9297EA831FD592730047ECA7 /* Sources */,
 				9297EA841FD592730047ECA7 /* Frameworks */,
 				9297EA851FD592730047ECA7 /* Resources */,
+				24C24F11A378B42A2590073F /* [CP] Embed Pods Frameworks */,
+				B91C71BED7D34746C7A748B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,16 +177,87 @@
 				9297EA951FD592730047ECA7 /* LaunchScreen.storyboard in Resources */,
 				9297EA921FD592730047ECA7 /* Assets.xcassets in Resources */,
 				9297EA901FD592730047ECA7 /* Main.storyboard in Resources */,
+				9297EA9E1FD5A10C0047ECA7 /* HistoricalEvent.proto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24C24F11A378B42A2590073F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProtoBuf-Client/Pods-ProtoBuf-Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtoBuf-Client/Pods-ProtoBuf-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AFE9C329F9FB4D51F96CB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProtoBuf-Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9297EA9F1FD5A12D0047ECA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "protoc --swift_out=./ProtoBuf-Client/Models/ ./ProtoBuf-Client/Resources/*.proto\n";
+		};
+		B91C71BED7D34746C7A748B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtoBuf-Client/Pods-ProtoBuf-Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9297EA831FD592730047ECA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9297EAA21FD5A1E80047ECA7 /* HistoricalEvent.pb.swift in Sources */,
 				9297EA8D1FD592730047ECA7 /* ViewController.swift in Sources */,
 				9297EA8B1FD592730047ECA7 /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +382,7 @@
 		};
 		9297EA9A1FD592730047ECA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DBF0059C0A92C021F97D4B /* Pods-ProtoBuf-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
@@ -274,6 +396,7 @@
 		};
 		9297EA9B1FD592730047ECA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B652DD5797D8291DF8821C6 /* Pods-ProtoBuf-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
@@ -304,6 +427,7 @@
 				9297EA9B1FD592730047ECA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
