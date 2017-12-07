@@ -8,5 +8,10 @@ target 'ProtoBuf-Client' do
   # Pods for ProtoBuf-Client
   pod 'SwiftProtobuf', '~> 1.0'
   pod 'Alamofire', '~> 4.6'
+  pod 'ObjectMapper', '~> 2.2'
+
+target 'ProtoBuf-ClientTests' do
+  inherit! :search_paths
+end
 
 end

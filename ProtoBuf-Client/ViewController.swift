@@ -14,18 +14,6 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-
-    Alamofire.request("http://localhost:8181/events").responseData { (response) in
-      guard let data = response.data else {
-        return
-      }
-
-      guard let events = try? HistoricalEvents(serializedData: data) else {
-        return
-      }
-
-      print(events)
-    }
   }
 
   override func didReceiveMemoryWarning() {
